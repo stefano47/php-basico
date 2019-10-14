@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Integração HTML com PHP</title>
+</head>
+<body>
+    <form action="ex002.php" method="get">
+        Nome: <input type="text" name="nome" id="txtn"> <br/><br/>
+        Ano de nascimento: <input type="number" name="ano" id="txtano"><br/>
+        <fieldset> <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="mas" value="homem">
+            <label for="mas">Masculino</label><br/>
+            <input type="radio" name="sexo" id="fem" value="mulher" checked>
+            <label for="fem">Feminino</label>
+        </fieldset><br/>
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
