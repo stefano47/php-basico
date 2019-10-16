@@ -6,20 +6,18 @@
 </head>
 <body>
     <?php
-        $num = $_GET["num"];
+        $num = $_GET["num"] ?? 1;
         $r = 0;
         for($c = 1; $c <= $num; $c++) {
-            if($c % 2 == 0) {
-                $r += 1;
-            };
-        };
-        if($r === 2) {
-            echo "O número $num é primo.";
-        } elseif($r === 1) {
-            echo "O número $num é primo";
+            if($num % $c == 0) {
+                $r++;
+            }
+        }
+        if($r == 2) {
+            echo "$num é primo";
         } else {
-            echo "O número $num não é primo";
-        };
+            echo "$num não é primo";
+        }
     ?>
     <br>
     <a href="ex003.html">Voltar</a>
